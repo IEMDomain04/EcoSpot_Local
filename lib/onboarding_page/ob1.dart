@@ -20,8 +20,8 @@ class OnBoarding1 extends StatelessWidget {
             ),
             SizedBox(height: 20),
 
-            //Text
-            Text("Enter"),
+            //Next Button
+            Image.asset("assets/nextButton.png"),
           ],
         ),
       ),
