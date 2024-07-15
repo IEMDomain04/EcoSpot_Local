@@ -6,11 +6,21 @@ class OnBoarding1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //Logo Center
+      //Widget for OverFlow
       body: SingleChildScrollView(
         child: Column(
+          //Title
           children: [
-            Text("Welcome\n to\n EcoSpot Local"),
+            Text(
+              "Welcome\n to\n EcoSpot Local",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  color: Color.fromARGB(255, 21, 255, 0),
+                  fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 10.0),
+
+            //Icon
             Padding(
               padding: const EdgeInsets.only(top: 50.0),
               child: Center(
