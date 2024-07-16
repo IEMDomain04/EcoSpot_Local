@@ -1,4 +1,4 @@
-import 'package:ecospot_local/onboarding_page/ob1.dart';
+import 'package:ecospot_local/app_page/home_page.dart';
 import 'package:flutter/material.dart';
 
 class OnBoarding5 extends StatelessWidget {
@@ -55,7 +55,7 @@ class OnBoarding5 extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const OnBoarding1(),
+                        builder: (context) => const HomePage(),
                       ),
                     );
                   },
