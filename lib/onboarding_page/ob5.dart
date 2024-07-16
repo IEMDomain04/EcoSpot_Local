@@ -18,13 +18,7 @@ class OnBoarding5 extends StatelessWidget {
                 Image.asset('assets/images/img4.png', height: 125, width: 350),
                 SizedBox(height: 50.0),
 
-                Text("Enable Location Services",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        color: Colors.lightGreen,
-                        fontSize: 15,
-                        height: 1.2,
-                        fontWeight: FontWeight.bold)),
+                Image.asset('assets/textLocationServices.png'),
                 SizedBox(height: 30.0),
 
                 Text(
