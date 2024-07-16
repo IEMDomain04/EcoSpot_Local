@@ -1,3 +1,4 @@
+import 'package:ecospot_local/onboarding_page/ob2.dart';
 import 'package:flutter/material.dart';
 
 class OnBoarding1 extends StatelessWidget {
@@ -8,31 +9,42 @@ class OnBoarding1 extends StatelessWidget {
     return Scaffold(
       //Widget for OverFlow
       body: SingleChildScrollView(
-        child: Column(
-          //Title
-          children: [
-            Text(
-              "Welcome\n to\n EcoSpot Local",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  color: Color.fromARGB(255, 21, 255, 0),
-                  fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 10.0),
+        child: Padding(
+          padding: const EdgeInsets.only(top: 120.0),
+          child: Column(
+            //Title
+            children: [
+              Text("Welcome\n to\n EcoSpot Local",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 30,
+                    height: 1.2,
+                    color: Colors.green,
+                    fontWeight: FontWeight.bold,
+                  )),
+              SizedBox(height: 30.0),
 
-            //Icon
-            Padding(
-              padding: const EdgeInsets.only(top: 50.0),
-              child: Center(
+              //Icon
+              Center(
                 child: Image.asset("assets/images/eco-icon.png",
-                    width: 150, height: 150),
+                    width: 180, height: 180),
               ),
-            ),
-            SizedBox(height: 20),
+              SizedBox(height: 70),
 
-            //Next Button
-            Image.asset("assets/nextButton.png"),
-          ],
+              //Next Button
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const OnBoarding2(),
+                    ),
+                  );
+                },
+                child: Image.asset('assets/nextButton.png'),
+              )
+            ],
+          ),
         ),
       ),
     );
