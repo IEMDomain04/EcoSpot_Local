@@ -14,14 +14,7 @@ class OnBoarding1 extends StatelessWidget {
           child: Column(
             //Title
             children: [
-              Text("Welcome\n to\n EcoSpot Local",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 30,
-                    height: 1.2,
-                    color: Colors.green,
-                    fontWeight: FontWeight.bold,
-                  )),
+              Image.asset("assets/textTitle.png"),
               SizedBox(height: 30.0),
 
               //Icon
