@@ -1,4 +1,4 @@
-import 'package:ecospot_local/onboarding_page/ob1.dart';
+import 'package:ecospot_local/app_page/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const OnBoarding1(), // Show the splash screen first
+      home: const HomePage(), // Show the splash screen first
     );
   }
 }
